@@ -1,0 +1,56 @@
+.fundo{
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+form {
+    animation-name: fade;
+    animation-duration: 1000ms;   
+  }
+  li {
+    animation-name: move;
+    animation-duration: 1000ms;    
+  }
+@keyframes fade {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes move {
+    from {
+      opacity: 0;
+      transform: translateX(-35%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes fade-delete {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+  @keyframes move-delete {
+    from {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-35%);
+    }
+  }
+ 
